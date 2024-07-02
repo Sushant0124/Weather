@@ -6,7 +6,7 @@ searchButton.addEventListener("click", (e) => {
 });
 
 async function getWeather(city) {
-    const url = `http://api.weatherapi.com/v1/current.json?key=a821c6dc51b24f9a814172649240107&q=${city}&aqi=no`;
+    const url = `https://api.weatherapi.com/v1/current.json?key=a821c6dc51b24f9a814172649240107&q=${city}&aqi=no`;
 
     try {
         let response = await axios.get(url);
