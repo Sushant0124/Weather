@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather App</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="weather-container" id="weather-container">
+        <div class="weather-header">
+            <img src="https://cdn2.iconfinder.com/data/icons/weather-flat-14/64/weather02-512.png" alt="Logo" class="logo">
+            <div class="search-box">
+                <input type="text" placeholder="Enter a city" id="city">
+                <button id="search">Search</button>
+            </div>
+        </div>
+        <div class="weather-info">
+            <div class="weather-icon" id="weather-icon">
+                <div class="sun-icon"></div>
+            </div>
+            <div class="weather-details">
+                <div class="temperature" id="temperature">--°C</div>
+                <div class="condition" id="condition">--</div>
+                <div class="location" id="location">--</div>
+            </div>
+            <div class="weather-stats">
+                <div class="humidity">
+                    <span id="humidity">--%</span> Humidity
+                </div>
+                <div class="wind-speed">
+                    <span id="wind-speed">-- Km/h</span> Wind Speed
+                </div>
+            </div>
+            <div class="show-more">
+                <a href="#" id="show-more-link">Show More</a>
+            </div>
+            <div class="extra-info" id="extra-info">
+                <div>Feels Like: <span id="feels-like">--°C</span></div>
+                <div>UV Index: <span id="uv-index">--</span></div>
+                <div>Pressure: <span id="pressure">-- mb</span></div>
+                <div>Visibility: <span id="visibility">-- km</span></div>
+                <div>Precipitation: <span id="precipitation">-- mm</span></div>
+            </div>
+        </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/axios@1.6.7/dist/axios.min.js"></script>
+    <script src="app.js"></script>
+</body>
+</html>
